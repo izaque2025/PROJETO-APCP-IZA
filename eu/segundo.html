@@ -1,102 +1,101 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Análise do Plano APCP - Prós e Contras</title>
-    <style>
-        :root {
-            --verde-sucesso: #27ae60;
-            --vermelho-desafio: #e74c3c;
-            --azul-escuro: #2c3e50;
-        }
-        body { font-family: 'Segoe UI', sans-serif; background: #f4f4f4; padding: 20px; line-height: 1.6; }
-        .container { max-width: 900px; margin: auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        h1 { text-align: center; color: var(--azul-escuro); }
-        .intro { text-align: center; color: #666; font-style: italic; margin-bottom: 30px; }
-        
-        .box { display: flex; gap: 20px; flex-wrap: wrap; }
-        .col { flex: 1; min-width: 300px; }
-        
-        h2 { padding: 10px; border-radius: 5px; color: white; text-align: center; }
-        .bg-positivo { background-color: var(--verde-sucesso); }
-        .bg-negativo { background-color: var(--vermelho-desafio); }
+<style>
+    .secao-debate {
+        background: var(--branco);
+        border-radius: 25px;
+        padding: 50px;
+        margin-bottom: 50px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    }
+    .grid-debate {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+        margin-top: 30px;
+    }
+    .coluna-debate {
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .a-favor {
+        border-top: 8px solid var(--verde-gestao);
+        background: #f0fff4;
+    }
+    .contra {
+        border-top: 8px solid var(--vermelho-lei);
+        background: #fff5f5;
+    }
+    .opiniao-card {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .opiniao-card strong {
+        display: block;
+        margin-bottom: 10px;
+        color: var(--azul-marinho);
+    }
+    .tag-debate {
+        font-size: 0.8rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 4px 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+    .tag-favor { background: var(--verde-gestao); color: rgb(16, 173, 37); }
+    .tag-contra { background: var(--vermelho-lei); color: rgb(198, 208, 8); }
+</style>
 
-        .item { background: #fff; border: 1px solid #ddd; padding: 15px; margin-bottom: 15px; border-radius: 8px; position: relative; }
-        .item strong { display: block; margin-bottom: 5px; color: var(--azul-escuro); }
-        
-        .footer { margin-top: 40px; text-align: center; border-top: 2px solid #eee; padding-top: 20px; }
-        .autor { font-weight: bold; color: #0038a8; }
-    </style>
-</head>
-<body>
+<div class="container" style="padding-top: 0;">
+    <div class="secao-debate">
+        <h2>7. Espaço de Debate: Diálogo Democrático</h2>
+        <p>Um projeto desta magnitude gera reflexões profundas. Abaixo, apresentamos as principais visões sobre o Plano APCP, equilibrando os benefícios esperados e os desafios de implementação.</p>
 
-<div class="container">
-    <h1>Análise Técnica do Plano APCP</h1>
-    <p class="intro">Um debate honesto sobre o futuro da nossa política.</p>
+        <div class="grid-debate">
+            <div class="coluna-debate a-favor">
+                <span class="tag-debate tag-favor">Argumentos a Favor</span>
+                
+                <div class="opiniao-card">
+                    <strong>📈 Fim da Política da Inércia</strong>
+                    <p>"O Plano APCP força o político a ser um gestor. Hoje, muitos são eleitos e não entregam nada. Com o salário e o poder atrelados ao esgoto e à saúde, o resultado vira a única prioridade."</p>
+                </div>
 
-    <div class="box">
-        <div class="col">
-            <h2 class="bg-positivo">✅ Por que é bom? (Prós)</h2>
-            
-            <div class="item">
-                <strong>Fim do Populismo Vazio</strong>
-                Políticos não ganham no grito ou na promessa, mas na planilha de resultados. O "falar bonito" perde para o "fazer esgoto".
+                <div class="opiniao-card">
+                    <strong>🛡️ Blindagem Contra a Corrupção</strong>
+                    <p>"A regra do Inquilino Técnico e a extinção de partidos por fraude criam um risco tão alto para o corrupto que a honestidade passa a ser o único caminho viável para a sobrevivência política."</p>
+                </div>
+
+                <div class="opiniao-card">
+                    <strong>🎓 Qualificação do Legislativo</strong>
+                    <p>"Exigir curso de gestão ou diploma superior eleva o nível do debate no Congresso. Teremos técnicos discutindo o país, e não apenas celebridades ou herdeiros políticos."</p>
+                </div>
+<footer>
+                <p><a href="/endex.html">início</a></p>
+                
             </div>
 
-            <div class="item">
-                <strong>Responsabilidade Partidária</strong>
-                O partido vira fiscal do seu próprio membro. Se um erra, todos caem. Isso limpa a política de dentro para fora.
-            </div>
+            <div class="coluna-debate contra">
+                <span class="tag-debate tag-contra">Pontos de Reflexão</span>
 
-            <div class="item">
-                <strong>Aceleração Social</strong>
-                Áreas esquecidas (saúde e saneamento) viram a prioridade nº 1 porque valem "cadeiras" e poder.
-            </div>
+                <div class="opiniao-card">
+                    <strong>⚠️ Risco de 'Maquiagem' de Dados</strong>
+                    <p>"Críticos argumentam que governantes poderiam tentar manipular dados para não perderem cadeiras. Por isso, o plano exige auditorias independentes e punições severas para qualquer tentativa de fraude."</p>
+                </div>
 
-            <div class="item">
-                <strong>Transparência Obrigatória</strong>
-                A auditoria 6 meses antes da eleição dá ao povo a prova real se o governo foi bom ou ruim antes de votar.
-            </div>
+                <div class="opiniao-card">
+                    <strong>⚖️ Desigualdade Regional</strong>
+                    <p>"Alguns temem que estados muito pobres nunca alcancem os ricos. É por isso que existem as **Regras de Superação**, que premiam quem evolui mais rápido, mesmo que ainda não seja o melhor do país."</p>
+                </div>
+
+                <div class="opiniao-card">
+                    <strong>🏛️ Resistência do Sistema Atual</strong>
+                    <p>"A maior dificuldade é a aprovação: os políticos atuais dificilmente votariam uma lei que corta o próprio salário por falta de rendimento. O plano depende de forte pressão popular ou iniciativa social</p></div>
+              
+                    <footer>
+                
+                <p><a href="https://t.me/zacomedia">grupo</a></p>
+            </footer>
         </div>
-
-        <div class="col">
-            <h2 class="bg-negativo">⚠️ Desafios e Riscos (Contras)</h2>
-            
-            <div class="item">
-                <strong>O Risco da "Maquiagem"</strong>
-                Políticos podem tentar esconder dados de crimes ou doenças para não perderem deputados. A auditoria teria que ser muito rígida.
-            </div>
-
-            <div class="item">
-                <strong>Ciclo da Pobreza</strong>
-                Estados que já são pobres podem ter dificuldade de bater as metas iniciais, correndo o risco de ficarem com pouca voz para pedir ajuda.
-            </div>
-
-            <div class="item">
-                <strong>Instabilidade Legislativa</strong>
-                A cada 4 anos, o tamanho da Câmara mudaria muito. Isso poderia dificultar a organização do Congresso Nacional.
-            </div>
-
-            <div class="item">
-                <strong>Punição Coletiva</strong>
-                Banir todos os filiados de um partido pode ser considerado injusto com os poucos membros que talvez fossem honestos.
-            </div>
-        </div>
-    </div>
-
-    
-
-    <div class="footer">
-        <p>Este material foi criado para fomentar o debate democrático e a busca por eficiência.</p>
-        <p>Idealizado por: <span class="autor">Izaque Molenque <a href="../index.html">início</a>
-
-
-
-
-
-
-
-
-
-
